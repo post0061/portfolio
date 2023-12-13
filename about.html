@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About</title>
+    <title itemprop="name">About</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -31,14 +31,23 @@
   <body>
     <!-- Skip Links -->
     <!-- Skip to Main Content -->
-    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <a href="#main-content" class="skip-link" role="link" itemprop="url"
+      >Skip to Main Content</a
+    >
     <!-- Skip to Navigation -->
-    <a href="#main-navigation" class="skip-link">Skip to Navigation</a>
+    <a href="#main-navigation" class="skip-link" role="link" itemprop="url"
+      >Skip to Navigation</a
+    >
     <!-- Skip to Footer -->
-    <a href="#main-footer" class="skip-link">Skip to Footer</a>
+    <a href="#main-footer" class="skip-link" role="link" itemprop="url"
+      >Skip to Footer</a
+    >
     <!-- header -->
     <header
       class="header d-flex justify-content-space-between align-items-center"
+      role="banner"
+      itemscope
+      itemtype="http://www.schema.org/WPHeader"
     >
       <!-- Hamburger menu -->
       <a
@@ -56,18 +65,21 @@
         tabindex="-1"
         id="hamburgerMenu"
         aria-labelledby="hamburgerMenu"
+        role="complementary"
+        itemscope
+        itemtype="http://www.schema.org/SiteNavigationElement"
       >
         <div class="side-menu-header">
-          <a href="homepage.html">
+          <a href="homepage.html" itemprop="url">
             <i class="fa-solid fa-house"></i>
           </a>
-          <h1 class="offcanvas-title logo fw-semibold fs-1">
+          <h1 class="offcanvas-title logo fw-semibold fs-1" itemprop="headline">
             Marilena Postolache
           </h1>
         </div>
         <div class="side-menu-content">
           <ul class="side-menu-list">
-            <li>
+            <li itemprop="name">
               <a
                 class="nav-link mobile-link fs-1 fw-semibold"
                 data-bs-toggle="collapse"
@@ -81,7 +93,7 @@
               </a>
               <div class="collapse collapsed-list" id="collapseExample">
                 <ul>
-                  <li>
+                  <li itemprop="name">
                     <a
                       class="nav-link mobile-inner-link fs-5"
                       href="photography.html"
@@ -90,7 +102,7 @@
                       Photography
                     </a>
                   </li>
-                  <li>
+                  <li itemprop="name">
                     <a
                       class="nav-link mobile-inner-link fs-5"
                       href="video.html"
@@ -99,7 +111,7 @@
                       Video
                     </a>
                   </li>
-                  <li>
+                  <li itemprop="name">
                     <a
                       class="nav-link mobile-inner-link fs-5"
                       href="webdev.html"
@@ -111,12 +123,12 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li itemprop="name">
               <a class="nav-link mobile-link fs-1 fw-semibold" href="about.html"
                 >About</a
               >
             </li>
-            <li>
+            <li itemprop="name">
               <a
                 class="nav-link mobile-link fs-1 fw-semibold"
                 href="contact.html"
@@ -194,29 +206,44 @@
       <div class="about-banner">
         <img
           class="banner-image"
-          src="/images/about-banner.jpg"
+          src="images/about-banner.jpg"
+          srcset="
+            images/about-banner-600.jpg   600w,
+            images/about-banner-1200.jpg 1200w
+          "
+          sizes="(max-width: 600px) 600px, 1200px"
           alt="about-banner"
+          itemprop="image"
         />
         <h2 class="fw-semibold fs-1 header-text">About</h2>
       </div>
       <div class="about-content">
         <div class="about-featured-image">
-          <img src="images/about.jpg" alt="featured-image" />
+          <img
+            src="images/about.jpg"
+            srcset="images/about-600.jpg 600w, images/about-1200.jpg 1200w"
+            sizes="(max-width: 600px) 600px, 1200px"
+            alt="featured-image"
+          />
         </div>
         <div class="about-description">
           <h3 class="fs-3 fw-semibold">Marilena Postolache</h3>
+          <p class="fs-5 lh-base">Hey there!</p>
           <p class="fs-5 lh-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            maxime deleniti est numquam, eum blanditiis repellat? Exercitationem
-            sit sequi reiciendis incidunt repellat unde quaerat vitae ab, dicta
-            eligendi odio animi id sapiente voluptate nisi cum iusto, facilis
-            reprehenderit in maiores corporis modi quidem. Blanditiis quaerat
-            ipsum esse odio ab quidem, illo magnam. Optio nulla adipisci libero
-            tempora quas minima omnis magni aspernatur quis quia eum nobis nihil
-            ullam dolore aliquid, quod doloribus, perferendis voluptatibus?
-            Facilis voluptatum ipsum minima! Reiciendis rem, eaque facilis
-            cupiditate, nostrum neque eveniet quaerat, autem obcaecati saepe
-            magnam est tempora animi! Sequi eum hic numquam voluptatum eligendi?
+            I'm Marilena Postolache, an Interactive Media Design student at
+            Algonquin College with a passion for photography. As a self-taught
+            photographer, I thrive on capturing the essence of diverse subjects,
+            from portraits to landscapes.
+          </p>
+          <p class="fs-5 lh-base">
+            Beyond the digital realm, I am a self-taught photographer with an
+            insatiable love for capturing moments in all their beauty. Whether
+            it's the play of light in a landscape or the genuine emotions of a
+            portrait, I find joy in every click of the shutter.
+          </p>
+          <p class="fs-5 lh-base">
+            Feel free to look at my work and get in touch if you want to
+            collaborate or just chat!
           </p>
         </div>
       </div>
