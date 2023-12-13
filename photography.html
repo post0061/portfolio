@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title itemprop="name">Photography</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/homepage.css" />
+    <link rel="stylesheet" href="/css/photography.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;800&family=Play&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/0e69e83d6c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <!-- Skip Links -->
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-link" itemprop="url"
+      >Skip to Main Content</a
+    >
+    <!-- Skip to Navigation -->
+    <a href="#main-navigation" class="skip-link" itemprop="url"
+      >Skip to Navigation</a
+    >
+    <!-- Skip to Footer -->
+    <a href="#main-footer" class="skip-link" itemprop="url">Skip to Footer</a>
+    <!-- header -->
+    <header
+      class="header d-flex justify-content-space-between align-items-center"
+      role="banner"
+      itemscope
+      itemtype="http://schema.org/WPHeader"
+    >
+      <!-- Hamburger menu -->
+      <a
+        href="#hamburgerMenu"
+        role="button"
+        class="hamburger-link"
+        data-bs-toggle="offcanvas"
+        aria-controls="hamburgerMenu"
+      >
+        <i class="fa-solid fa-bars hamburger-icon"></i>
+      </a>
+      <!-- Side bar for mobile -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="hamburgerMenu"
+        aria-labelledby="hamburgerMenu"
+        role="complementary"
+        itemscope
+        itemtype="http://schema.org/SiteNavigationElement"
+      >
+        <div class="side-menu-header">
+          <a href="homepage.html" itemprop="url">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <h1 class="offcanvas-title logo fw-semibold fs-1" itemprop="headline">
+            Marilena Postolache
+          </h1>
+        </div>
+        <div class="side-menu-content">
+          <ul class="side-menu-list">
+            <li itemprop="name">
+              <a
+                class="nav-link mobile-link fs-1 fw-semibold"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Portfolio
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <div class="collapse collapsed-list" id="collapseExample">
+                <ul>
+                  <li itemprop="name">
+                    <a
+                      class="nav-link mobile-inner-link fs-5"
+                      href="photography.html"
+                      itemprop="url"
+                    >
+                      <i class="fa-solid fa-arrow-turn-up"></i>
+                      Photography
+                    </a>
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      class="nav-link mobile-inner-link fs-5"
+                      href="video.html"
+                      itemprop="url"
+                    >
+                      <i class="fa-solid fa-arrow-turn-up"></i>
+                      Video
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link mobile-inner-link fs-5"
+                      href="webdev.html"
+                      itemprop="url"
+                    >
+                      <i class="fa-solid fa-arrow-turn-up"></i>
+                      Web Development
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li itemprop="name">
+              <a
+                class="nav-link mobile-link fs-1 fw-semibold"
+                href="about.html"
+                itemprop="url"
+                >About</a
+              >
+            </li>
+            <li itemprop="name">
+              <a
+                class="nav-link mobile-link fs-1 fw-semibold"
+                href="contact.html"
+                itemprop="url"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="side-menu-socials">
+          <a href="https://facebook.com" target="_blank" itemprop="url">
+            <i class="fa-brands fa-facebook social-icon"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" itemprop="url">
+            <i class="fa-brands fa-instagram social-icon"></i>
+          </a>
+          <a href="https://tiktok.com" target="_blank" itemprop="url">
+            <i class="fa-brands fa-tiktok social-icon"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" itemprop="url">
+            <i class="fa-brands fa-linkedin social-icon"></i>
+          </a>
+          <a href="https://github.com" target="_blank" itemprop="url">
+            <i class="fa-brands fa-github social-icon"></i>
+          </a>
+        </div>
+      </div>
+      <a class="logo-h1" href="homepage.html" itemprop="url">
+        <h1 class="logo fw-semibold fs-1" itemprop="headline">
+          Marilena Postolache
+        </h1>
+      </a>
+      <nav class="navbar navbar-expand-lg" role="navigation" itemprop="name">
+        <div class="navigation container-fluid">
+          <div class="navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item fw-semibold">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="homepage.html"
+                  role="link"
+                  itemprop="url"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item dropdown fw-semibold">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  itemprop="url"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li itemprop="name">
+                    <a
+                      class="dropdown-item"
+                      href="photography.html"
+                      role="menuitem"
+                      itemprop="url"
+                      >Photography</a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      class="dropdown-item"
+                      href="video.html"
+                      role="menuitem"
+                      itemprop="url"
+                      >Video</a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      class="dropdown-item"
+                      href="webdev.html"
+                      role="menuitem"
+                      itemprop="url"
+                      >Web Development</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item fw-semibold">
+                <a class="nav-link" href="about.html" role="link" itemprop="url"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item fw-semibold">
+                <a
+                  class="nav-link"
+                  href="contact.html"
+                  role="link"
+                  itemprop="url"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main" itemprop="mainContentOfPage">
+      <div
+        class="photography-banner"
+        role="region"
+        itemscope
+        itemtype="http://schema.org/CreativeWork"
+      >
+        <img
+          class="banner-image"
+          src="images/photography-banner.jpg"
+          srcset="
+            images/photography-banner-600.jpg   600w,
+            images/photography-banner-1200.jpg 1200w
+          "
+          sizes="(max-width: 600px) 600px, 1200px"
+          alt="photography-banner"
+          itemprop="image"
+        />
+        <h2 class="fw-semibold fs-1 header-text" itemprop="headline">
+          Photography
+        </h2>
+      </div>
+
+      <div
+        class="container photography-grid"
+        role="region"
+        itemscope
+        itemtype="http://schema.org/CreativeWork"
+      >
+        <div class="row photography-grid-row g-4">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph1.jpg"
+              srcset="
+                images/photograph1-600.jpg   600w,
+                images/photograph1-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="frontman on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph2.jpg"
+              srcset="
+                images/photograph2-600.jpg   600w,
+                images/photograph2-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="guitarist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph3.jpg"
+              srcset="
+                images/photograph3-600.jpg   600w,
+                images/photograph3-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="drummer on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph4.jpg"
+              srcset="
+                images/photograph4-600.jpg   600w,
+                images/photograph4-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="guitarist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph5.jpg"
+              srcset="
+                images/photograph5-600.jpg   600w,
+                images/photograph5-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="frontman on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph6.jpg"
+              srcset="
+                images/photograph6-600.jpg   600w,
+                images/photograph6-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="frontman on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph7.jpg"
+              srcset="
+                images/photograph7-600.jpg   600w,
+                images/photograph7-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="drummer on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph8.jpg"
+              srcset="
+                images/photograph8-600.jpg   600w,
+                images/photograph8-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="bassist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph9.jpg"
+              srcset="
+                images/photograph9-600.jpg   600w,
+                images/photograph9-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="guitarist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph10.jpg"
+              srcset="
+                images/photograph10-600.jpg   600w,
+                images/photograph10-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="guitarist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph11.jpg"
+              srcset="
+                images/photograph11-600.jpg   600w,
+                images/photograph11-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="guitarist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph12.jpg"
+              srcset="
+                images/photograph12-600.jpg   600w,
+                images/photograph12-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="frontman on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph13.jpg"
+              srcset="
+                images/photograph13-600.jpg   600w,
+                images/photograph13-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="drummer on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph14.jpg"
+              srcset="
+                images/photograph14-600.jpg   600w,
+                images/photograph14-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="guitarist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph15.jpg"
+              srcset="
+                images/photograph15-600.jpg   600w,
+                images/photograph15-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="bassist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph16.jpg"
+              srcset="
+                images/photograph16-600.jpg   600w,
+                images/photograph16-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="bassist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph17.jpg"
+              srcset="
+                images/photograph17-600.jpg   600w,
+                images/photograph17-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="frontman on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph18.jpg"
+              srcset="
+                images/photograph18-600.jpg   600w,
+                images/photograph18-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="drummer on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photography-banner.jpg"
+              srcset="
+                images/photography-banner-600.jpg   600w,
+                images/photography-banner-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="guitarist on stage"
+              role="img"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 photography-card">
+            <img
+              class="banner-image"
+              src="images/photograph20.jpg"
+              srcset="
+                images/photograph20-600.jpg   600w,
+                images/photograph20-1200.jpg 1200w
+              "
+              sizes="(max-width: 600px) 600px, 1200px"
+              alt="frontman on stage"
+              role="img"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+      <div class="container footer-wrapper text-center">
+        <div class="footer-links">
+          <ul>
+            <li itemprop="name">
+              <a
+                href="about.html"
+                class="footer-link"
+                role="link"
+                itemprop="url"
+                >About</a
+              >
+            </li>
+            <li itemprop="name">
+              <a
+                href="contact.html"
+                class="footer-link"
+                role="link"
+                itemprop="url"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-icons">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-facebook social-icon"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-instagram social-icon"></i>
+          </a>
+          <a
+            href="https://tiktok.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-tiktok social-icon"></i>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-linkedin social-icon"></i>
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-github social-icon"></i>
+          </a>
+        </div>
+        <div class="footer-newsletter">
+          <div class="input-group">
+            <span class="envelope-icon"
+              ><i class="fa-solid fa-envelope"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Newsletter Signup"
+              aria-label="Newsletter Signup"
+              aria-describedby="newsletter"
+            />
+            <span class="input-group-text" id="newsletter">
+              <i class="fa-solid fa-arrow-right arrow-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

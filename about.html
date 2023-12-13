@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/homepage.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;800&family=Play&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/0e69e83d6c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Skip Links -->
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <!-- Skip to Navigation -->
+    <a href="#main-navigation" class="skip-link">Skip to Navigation</a>
+    <!-- Skip to Footer -->
+    <a href="#main-footer" class="skip-link">Skip to Footer</a>
+    <!-- header -->
+    <header
+      class="header d-flex justify-content-space-between align-items-center"
+    >
+      <!-- Hamburger menu -->
+      <a
+        href="#hamburgerMenu"
+        role="button"
+        class="hamburger-link"
+        data-bs-toggle="offcanvas"
+        aria-controls="hamburgerMenu"
+      >
+        <i class="fa-solid fa-bars hamburger-icon"></i>
+      </a>
+      <!-- Side bar for mobile -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="hamburgerMenu"
+        aria-labelledby="hamburgerMenu"
+      >
+        <div class="side-menu-header">
+          <a href="homepage.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <h1 class="offcanvas-title logo fw-semibold fs-1">
+            Marilena Postolache
+          </h1>
+        </div>
+        <div class="side-menu-content">
+          <ul class="side-menu-list">
+            <li>
+              <a
+                class="nav-link mobile-link fs-1 fw-semibold"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Portfolio
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <div class="collapse collapsed-list" id="collapseExample">
+                <ul>
+                  <li>
+                    <a
+                      class="nav-link mobile-inner-link fs-5"
+                      href="photography.html"
+                    >
+                      <i class="fa-solid fa-arrow-turn-up"></i>
+                      Photography
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link mobile-inner-link fs-5"
+                      href="video.html"
+                    >
+                      <i class="fa-solid fa-arrow-turn-up"></i>
+                      Video
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link mobile-inner-link fs-5"
+                      href="webdev.html"
+                    >
+                      <i class="fa-solid fa-arrow-turn-up"></i>
+                      Web Development
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="nav-link mobile-link fs-1 fw-semibold" href="about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link mobile-link fs-1 fw-semibold"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="side-menu-socials">
+          <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook social-icon"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram social-icon"></i>
+          </a>
+          <a href="https://tiktok.com" target="_blank">
+            <i class="fa-brands fa-tiktok social-icon"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin social-icon"></i>
+          </a>
+          <a href="https://github.com" target="_blank">
+            <i class="fa-brands fa-github social-icon"></i>
+          </a>
+        </div>
+      </div>
+      <a class="logo-h1" href="homepage.html">
+        <h1 class="logo fw-semibold fs-1">Marilena Postolache</h1>
+      </a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="navigation container-fluid">
+          <div class="navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item fw-semibold">
+                <a class="nav-link" aria-current="page" href="homepage.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item dropdown fw-semibold">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="photography.html"
+                      >Photography</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="video.html">Video</a></li>
+                  <li>
+                    <a class="dropdown-item" href="webdev.html"
+                      >Web Development</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item fw-semibold">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item fw-semibold">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="about-banner">
+        <img
+          class="banner-image"
+          src="/images/about-banner.jpg"
+          alt="about-banner"
+        />
+        <h2 class="fw-semibold fs-1 header-text">About</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-featured-image">
+          <img src="images/about.jpg" alt="featured-image" />
+        </div>
+        <div class="about-description">
+          <h3 class="fs-3 fw-semibold">Marilena Postolache</h3>
+          <p class="fs-5 lh-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            maxime deleniti est numquam, eum blanditiis repellat? Exercitationem
+            sit sequi reiciendis incidunt repellat unde quaerat vitae ab, dicta
+            eligendi odio animi id sapiente voluptate nisi cum iusto, facilis
+            reprehenderit in maiores corporis modi quidem. Blanditiis quaerat
+            ipsum esse odio ab quidem, illo magnam. Optio nulla adipisci libero
+            tempora quas minima omnis magni aspernatur quis quia eum nobis nihil
+            ullam dolore aliquid, quod doloribus, perferendis voluptatibus?
+            Facilis voluptatum ipsum minima! Reiciendis rem, eaque facilis
+            cupiditate, nostrum neque eveniet quaerat, autem obcaecati saepe
+            magnam est tempora animi! Sequi eum hic numquam voluptatum eligendi?
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+      <div class="container footer-wrapper text-center">
+        <div class="footer-links">
+          <ul>
+            <li itemprop="name">
+              <a
+                href="about.html"
+                class="footer-link"
+                role="link"
+                itemprop="url"
+                >About</a
+              >
+            </li>
+            <li itemprop="name">
+              <a
+                href="contact.html"
+                class="footer-link"
+                role="link"
+                itemprop="url"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-icons">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-facebook social-icon"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-instagram social-icon"></i>
+          </a>
+          <a
+            href="https://tiktok.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-tiktok social-icon"></i>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-linkedin social-icon"></i>
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            role="link"
+            itemprop="url"
+          >
+            <i class="fa-brands fa-github social-icon"></i>
+          </a>
+        </div>
+        <div class="footer-newsletter">
+          <div class="input-group">
+            <span class="envelope-icon"
+              ><i class="fa-solid fa-envelope"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Newsletter Signup"
+              aria-label="Newsletter Signup"
+              aria-describedby="newsletter"
+            />
+            <span class="input-group-text" id="newsletter">
+              <i class="fa-solid fa-arrow-right arrow-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

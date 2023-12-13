@@ -1,0 +1,261 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of CSS Reset */
+
+/* defining the website colors and fonts */
+:root {
+  --bs-primary: #f4f4f4;
+  --bs-secondary: #333333;
+  --bs-accent: #007b7e;
+  --bs-body-font-family: "Montserrat";
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+}
+
+.btn-light {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: var(--bs-secondary);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--bs-secondary);
+  --bs-btn-hover-border-color: var(--bs-secondary);
+  --bs-btn-focus-shadow-rgb: 211, 212, 213;
+  --bs-btn-disabled-bg: #ffffff;
+  --bs-btn-disabled-border-color: #ffffff;
+}
+
+/* Main section styling */
+.contact-banner {
+  position: relative;
+  width: 90vw;
+  margin: 0 auto;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-header {
+  margin-bottom: 3rem;
+}
+
+.contact-content {
+  width: 80vw;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.contact-featured-image {
+  width: 400px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.contact-featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.submit-button {
+  text-align: right;
+  grid-column: span 2;
+  grid-row: 2;
+}
+
+.submit-button i {
+  font-size: 13px;
+}
+
+/* Tablet */
+@media only screen and (max-width: 900px) {
+  .contact-banner {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .about-featured-image {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  .contact-banner {
+    height: 180px;
+  }
+
+  .contact-header {
+    margin-bottom: 1rem;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-featured-image {
+    margin: 0 auto;
+    width: 250px;
+    height: 100%;
+  }
+
+  .contact-form {
+    gap: 20px;
+  }
+
+  .submit-button {
+    text-align: right;
+    grid-column: span 1;
+    grid-row: 3;
+  }
+}
