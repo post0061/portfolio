@@ -238,13 +238,13 @@ body {
 }
 
 .carousel-control-prev-icon {
-  background-image: url(/images/chevron-left.svg);
+  background-image: url(images/chevron-left.svg);
   width: 6rem;
   height: 6rem;
 }
 
 .carousel-control-next-icon {
-  background-image: url(/images/chevron-right.svg);
+  background-image: url(images/chevron-right.svg);
   width: 6rem;
   height: 6rem;
 }
